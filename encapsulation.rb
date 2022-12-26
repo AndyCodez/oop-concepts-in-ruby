@@ -36,11 +36,11 @@ class Admin < Person
     end
 end
 
-a = Admin.new("Jeff", 20)
-a.speak 
+admin = Admin.new("Jeff", 20)
+admin.speak 
 #=> Hello, my name is Jeff and I am 20 years old.
 #I am a protected method and can be called from within the class or by a subclass.
 
-a.peek #=> I am a protected method and can be called from within the class or by a subclass.
-a.secret_info # This will throw an error because secret_info is a private method
-a.protected_info # This will throw an error because protected_info is a protected method
+admin.peek #=> I am a protected method and can be called from within the class or by a subclass.
+admin.secret_info # This will throw an error because secret_info is a private method
+admin.protected_info # This will throw an error because protected_info is a protected method
